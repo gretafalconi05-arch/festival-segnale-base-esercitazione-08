@@ -26,7 +26,10 @@ async function caricaMeteo() {
       throw new Error("Dati meteo incompleti.");
     }
 
-    statoMeteo.textContent =
+   statoMeteo.innerHTML =
+  `<strong>Temperatura:</strong> ${corrente.temperature_2m} °C<br>` +
+  `<strong>Vento:</strong> ${corrente.wind_speed_10m} km/h<br>` +
+  `<strong>Ora del dato:</strong> ${corrente.time.replace("T", " ")}`;
       `Temperatura: ${corrente.temperature_2m} °C · ` +
       `Vento: ${corrente.wind_speed_10m} km/h · ` +
       `Dato aggiornato: ${corrente.time.replace("T", " ")}`;
