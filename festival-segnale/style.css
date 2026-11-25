@@ -314,7 +314,7 @@ button:focus {
   padding: 1.25rem;
   border: 2px solid var(--colore-primario);
   border-radius: 0.75rem;
-   background: #ffffff;
+   background: #ffffff ;
 }
 
 .teaching-note {
